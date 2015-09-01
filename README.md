@@ -1,2 +1,2 @@
 # ucp_helloworld
-Linux G++ console 
+Linux G++ console
