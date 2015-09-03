@@ -9,15 +9,15 @@
 #include "../ulp_libfunc/libfunc.h"
 #include "../ulp_libclass/libclass.h"
 
-/*
+
 #ifdef _DEBUG
-  #include "__build_num_debug.h"
+  //TBD #include "__build_num_debug.h"
   char gszBuildType[] = "Debug";
 #else
-  #include "__build_num_release.h"
+  //TBD #include "__build_num_release.h"
   char gszBuildType[] = "Release";
 #endif
-*/
+
 
 int main(int argc, char* argv[])
 {
