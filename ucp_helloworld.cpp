@@ -3,7 +3,7 @@
 //     Created: 21-AUG-2015
 // Last Update: 01-SEP-2015
 
-#define VER 2
+#define VER 3
 
 #include "stdio.h"
 #include "../ulp_libfunc/libfunc.h"
@@ -11,10 +11,10 @@
 
 
 #ifdef _DEBUG
-  //TBD #include "__build_num_debug.h"
+  #include "__build_num_debug.h"
   char gszBuildType[] = "Debug";
 #else
-  //TBD #include "__build_num_release.h"
+  #include "__build_num_release.h"
   char gszBuildType[] = "Release";
 #endif
 
@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 
     x x1(100, 200); // create object x1
 
-    //printf("ucp_helloworld - Ver %d (%s) Build %d\n", VER, gszBuildType, BUILD_NUM);
+    printf("ucp_helloworld - Ver %d (%s) Build %d (Built: %s %s)\n", VER, gszBuildType, BUILD_NUM, __DATE__, __TIME__);
 
     printf("wlp_libfunc - lib_test_incr_num(101) = %d\n", lib_test_incr_num(101));
 

@@ -19,6 +19,9 @@
 					<Add library="../lib/libulp_libclassD.a" />
 					<Add library="../lib/libulp_libfuncD.a" />
 				</Linker>
+				<ExtraCommands>
+					<Add before="../../ucx_incrbuildnum.out __build_num_debug -L" />
+				</ExtraCommands>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/ucp_helloworld" prefix_auto="1" extension_auto="1" />
@@ -33,6 +36,9 @@
 					<Add library="../lib/libulp_libclass.a" />
 					<Add library="../lib/libulp_libfunc.a" />
 				</Linker>
+				<ExtraCommands>
+					<Add before="../../ucx_incrbuildnum.out __build_num_release -L" />
+				</ExtraCommands>
 			</Target>
 		</Build>
 		<Compiler>
