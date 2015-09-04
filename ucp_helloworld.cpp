@@ -27,6 +27,7 @@ int main(int argc, char* argv[])
     printf("ucp_helloworld - Ver %d (%s) Build %d (Built: %s %s)\n", VER, gszBuildType, BUILD_NUM, __DATE__, __TIME__);
 
     printf("wlp_libfunc - lib_test_incr_num(101) = %d\n", lib_test_incr_num(101));
+    printf("wlp_libfunc - lib_test_decr_num(101) = %d\n", lib_test_decr_num(101));
 
     x1.setb(222);
     printf("wlp_libclass - x.display():\n");
