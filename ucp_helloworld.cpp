@@ -21,10 +21,16 @@
 
 int main(int argc, char* argv[])
 {
-
+    char szBuf[128];
     x x1(100, 200); // create object x1
 
     printf("ucp_helloworld - Ver %d (%s) Build %d (Built: %s %s)\n", VER, gszBuildType, BUILD_NUM, __DATE__, __TIME__);
+
+    getLibFuncBuildInfo(szBuf, 128);
+    printf("  Using ulp_libfunc:  %s\n", szBuf);
+
+    getLibClassBuildInfo(szBuf, 128);
+    printf("  Using ulp_libclass: %s\n", szBuf);
 
     printf("wlp_libfunc - lib_test_incr_num(101) = %d\n", lib_test_incr_num(101));
     printf("wlp_libfunc - lib_test_decr_num(101) = %d\n", lib_test_decr_num(101));
